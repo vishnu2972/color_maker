@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#66EDC2">
+    <!-- Creating a Heading -->
+    <EditText
+        android:id="@+id/heading"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Vishnu's RGB Color Maker"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!-- Creating a Color Box -->
+    <View
+        android:id="@+id/colorPreview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000" />
+
+    <!-- Creating Red Color Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <!-- Creating Switch for Red Color -->
+        <Switch
+            android:id="@+id/redSwitch"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#EC5050"
+            android:checked="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Red"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!-- Creating SeekBar for Red Color -->
+        <SeekBar
+            android:id="@+id/redSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:enabled="true" />
+        <!-- Creating a Text Box for Red Color Value -->
+        <EditText
+            android:id="@+id/redValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="0-1"
+            android:text="0"
+            android:enabled="true" />
+    </LinearLayout>
+
+    <!-- Creating Green Color Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <!-- Creating Switch for Green Color -->
+        <Switch
+            android:id="@+id/greenSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!-- Creating SeekBar for Green Color -->
+        <SeekBar
+            android:id="@+id/greenSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:enabled="true" />
+        <!-- Creating Text Box for Green Color Value -->
+        <EditText
+            android:id="@+id/greenValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="0-1"
+            android:text="0"
+            android:enabled="true" />
+    </LinearLayout>
+
+    <!-- Creating Blue Color Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <!-- Creating Switch for Blue Color -->
+        <Switch
+            android:id="@+id/blueSwitch"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:background="#5E5EDF"
+            android:checked="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!-- Creating SeekBar for Blue Color -->
+        <SeekBar
+            android:id="@+id/blueSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:enabled="true" />
+        <!-- Creating Text Box for Blue Color Value -->
+        <EditText
+            android:id="@+id/blueValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="0-1"
+            android:text="0"
+            android:enabled="true" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <!-- Creating Reset Button -->
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="Reset" />
+            <!-- Creating Yellow Button -->
+            <Button
+                android:id="@+id/yellowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yellow"
+                android:layout_margin="1dp" />
+            <!-- Creating Pink Button -->
+            <Button
+                android:id="@+id/pinkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink"
+                android:layout_margin="1dp" />
+            <!-- Creating Cyan Button -->
+            <Button
+                android:id="@+id/cyanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyan"
+                android:layout_margin="1dp" />
+        </LinearLayout>
+</LinearLayout>
+
